@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Identificacion de Deficiencia de Zinc</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../static/img/beaker.svg" rel="icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">      
+
+  <!-- =======================================================
+    Theme Name: BizPage
+    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">Identificacion de Deficiencia de Zinc</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          
+          <li><a href="#portfolio">Data</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="../static/img/intro-carousel/2.jpg" alt=""></div>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h5>Identifica la Deficiencia de Zinc en naranjos, con solo una imagen.</h5>
+                    <div>
+                        <form id="upload-file" method="post" enctype="multipart/form-data">
+                            <label for="imageUpload" class="btn-get-started scrollto">Elegir Imagen
+                            </label>
+                                            
+                            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                        </form>
+
+                        <div class="image-section col-lg-4 col-md-6" style="display:none;    margin-left:150px;
+    text-align: center;">
+                            <div class="img-preview ">
+                                <div id="imagePreview">
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn-get-started scrollto padding-left: 250px;
+    text-align: center" id="btn-predict" style="margin-left:75px;">Predecir</button>
+                            </div>
+                        </div>
+
+                        <div class="loader" style="display:inline-block;"></div>
+
+                        <h3 id="result" style="color:#ffc107;">
+                            <span> </span>
+                        </h3>
+
+                    </div>
+
+                    
+                    
+                  </div>
+                </div>
+   
+          </div>
+<!--
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="../static/img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+               <h2>Deficiencia de Zinc en Naranjos</h2>
+                <p>Identifica la Deficiencia de Zinc, con solo una imagen.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Cargar imagen</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="../static/img/intro-carousel/3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+               <h2>Deficiencia de Zinc en Naranjos</h2>
+                <p>Identifica la Deficiencia de Zinc, con solo una imagen.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Cargar imagen</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="../static/img/intro-carousel/4.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+               <h2>Deficiencia de Zinc en Naranjos</h2>
+                <p>Identifica la Deficiencia de Zinc, con solo una imagen.</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Cargar imagen</a>
+              </div>
+            </div>
+          </div>
+
+          </div>
+-->
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-bookmarks-outline"></i>
+            <h4 class="title"><a href="">Investigaciones</a></h4>
+            <p class="description">La deficiencia de Zinc en citricos es muy comun, debido a muchos factores. Actualmente se habla de deficiencia de Zn en un 40% de los suelos cultivados en todo el mundo. </p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a href="">El Zinc</a></h4>
+            <p class="description">es uno de los micronutrientes que las plantas necesitan para tener crecimiento y reproducción normales. Sin embargo, a pesar de su importancia, el Zn es el micronutriente más deficiente en todo el mundo.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title"><a href="">Importancia</a></h4>
+            <p class="description">Por ello la detección oportuna de enfermedades y deficiencias nutricionales en cultivos es un factor determinante en una eficiente producción agrícola, por lo que es esencial la identificación de manera temprana.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>Este proyecto nace con la intención de ofrecer como ayuda una herramienta de fácil uso a todos los citricultores que día a día velan por el cuidado de sus cultivos, dicha herramienta permitirá al usuario identificar la deficiencia de Zinc en los naranjos ya que esta deficiencia nutricional es un causante de una serie de daños a la planta en general reduciendo en gran manera su productividad. </p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="../static/img/about-mission.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Detalles</a></h2>
+              <p>
+                La identificación de esta deficiencia es realizada mediante Redes Neuronales Convolucionales (siglas en inglés - CNN), tomando como datos de entrenamiento imágenes de las hojas de los naranjos y  para su clasificación e identificación, se hizo Transfer Learning y el modelo VGG16.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="../static/img/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Resultados</a></h2>
+              <p>
+                Se logro identificar la deficiencia de zinc en naranjos a mas de un 80% de precision.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="../static/img/about-vision.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Recomendaciones</a></h2>
+              <p>
+                Se recomienda la implementacion de mas modulos en el que se pueda identificar mas deficiencias y otras enfermedades. 
+              </p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    
+
+    
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Datos Recolectados</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">Deficiencia de Zinc</li>
+              <li data-filter=".filter-card">Hojas sanas</li>
+              <li data-filter=".filter-card">Otras deficiencias</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/zinc1.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/zinc1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 1</a></h4>
+                <p>Deficiencia de Zinc</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/mag1.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/mag1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 3</a></h4>
+                <p>Deficiencia de Magnesio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/zinc2.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/zinc2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 2</a></h4>
+                <p>Deficiencia de Zinc</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/sana1.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/sana1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 2</a></h4>
+                <p>Hoja sana</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/man1.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/man1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 2</a></h4>
+                <p>Deficiencia de Manganeso</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/zinc3.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/zinc3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 3</a></h4>
+                <p>Deficiencia de Zinc</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/sana1.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/sana1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 1</a></h4>
+                <p>Hoja sana</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/sana3.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/sana3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 3</a></h4>
+                <p>Hoja sana</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="../static/img/portfolio/pota1.jpg" class="img-fluid" alt="">
+                <a href="../static/img/portfolio/pota1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Img 1</a></h4>
+                <p>Deficiencia de Potasio</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    
+    <
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>DefZinc</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="../static/lib/jquery/jquery.min.js"></script>
+  <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/lib/easing/easing.min.js"></script>
+  <script src="../static/lib/superfish/hoverIntent.js"></script>
+  <script src="../static/lib/superfish/superfish.min.js"></script>
+  <script src="../static/lib/wow/wow.min.js"></script>
+  <script src="../static/lib/waypoints/waypoints.min.js"></script>
+  <script src="../static/lib/counterup/counterup.min.js"></script>
+  <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="../static/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../static/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script> 
+  <!-- Contact Form JavaScript File -->
+
+
+  <!-- Template Main Javascript File -->
+  <script src="../static/js/main.js"></script>
+
+</body>
+</html>
